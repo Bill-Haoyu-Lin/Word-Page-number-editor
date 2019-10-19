@@ -25,4 +25,4 @@ for i in range(1,1001):
     new_section = document.add_section()
     new_section.start_type
     header.is_linked_to_previous = False
-document.save('try 8.docx')
+document.save('your document.docx')
