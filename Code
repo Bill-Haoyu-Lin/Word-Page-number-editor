@@ -1,4 +1,4 @@
-pip install python-docx -U      #download python-docx library
+
 from docx import Document
 document = Document()
 section = document.sections[0]
@@ -7,6 +7,7 @@ for i in range(1,1001):
     paragraph = header.paragraphs[0]
     page_num = i
     print(page_num)
+    //on odd papge print on right upper corner and even page on left upper corner
     if page_num < 10 and i%2 == 0:
         paragraph.add_run("00000"+str(page_num)).bold = True
     elif page_num < 10 and i%2 != 0:
